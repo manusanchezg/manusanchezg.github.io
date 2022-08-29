@@ -1,0 +1,76 @@
+figure {
+  border-radius: 10px;
+  border: 3px solid #efebce;
+  margin: 20px;
+  padding: 10px;
+}
+
+figure > img {
+  border-radius: 10px;
+  filter: grayscale();
+  max-width: 35%;
+  transition: 0.5s;
+}
+
+figure > img:hover {
+  filter: none;
+  transform: scale(1.1);
+}
+
+figure:nth-child(even) {
+  align-items: center;
+  animation: moveToRight 1s ease;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+figure:nth-child(odd) {
+  align-items: center;
+  animation: moveToLeft 1s ease;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+figure > figcaption {
+  margin: 0 auto;
+  max-width: 45%;
+}
+
+h2 {
+  animation-direction: alternate;
+  animation-iteration-count: 4;
+  animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+  animation: bounce 0.5s;
+  font-size: 2rem;
+}
+
+@keyframes bounce {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 30px, 0);
+  }
+}
+
+@keyframes moveToRight {
+  0% {
+    transform: translateX(-1400px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes moveToLeft {
+  0% {
+    transform: translateX(1400px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
