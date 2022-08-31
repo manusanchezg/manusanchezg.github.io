@@ -1,23 +1,23 @@
-figure {
+.odd, .even {
   border-radius: 10px;
   border: 3px solid #efebce;
   margin: 20px;
   padding: 10px;
 }
 
-figure > img {
+.travel-pic {
   border-radius: 10px;
   filter: grayscale();
   max-width: 35%;
   transition: 0.5s;
 }
 
-figure > img:hover {
+.travel-pic:hover {
   filter: none;
   transform: scale(1.1);
 }
 
-figure:nth-child(even) {
+.even {
   align-items: center;
   animation: moveToRight 1s ease;
   display: flex;
@@ -26,7 +26,7 @@ figure:nth-child(even) {
   justify-content: space-between;
 }
 
-figure:nth-child(odd) {
+.odd {
   align-items: center;
   animation: moveToLeft 1s ease;
   display: flex;
