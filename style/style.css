@@ -1,19 +1,17 @@
- /* --------- Fonts and general ------------ */
+/* --------- Fonts and general ------------ */
 
-@import url('travel.css');
-@import url('form.css');
-@import url('portfolio.css');
+@import url("travel.css");
+@import url("form.css");
+@import url("portfolio.css");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-
 
 * {
   box-sizing: border-box;
 }
 
-*::selection{
-    color: #EFEBCE;
-    background-color: #b8b17c;
+*::selection {
+  color: #efebce;
+  background-color: #b8b17c;
 }
 
 body {
@@ -23,149 +21,214 @@ body {
 }
 
 footer {
-    background-color: #2e3138;
+  background-color: #2e3138;
 }
 
 body::-webkit-scrollbar {
-    width: 18px;
+  width: 18px;
 }
 
 body::-webkit-scrollbar-track {
-    background: #0c0c0e;
+  background: #0c0c0e;
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: #757887;
-    border-radius: 20px;
-    border: 3px solid #2e3138;
+  background-color: #757887;
+  border-radius: 20px;
+  border: 3px solid #2e3138;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: Rubik, Georgia, serif;
-    font-weight: 600;
-    letter-spacing: 3px;
-    text-align: center;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Rubik, Georgia, serif;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-align: center;
 }
 
-
-
- /* --------- Header -------- */
+/* --------- Header -------- */
 
 header {
-    position: sticky;
-    top: 0px;
-    z-index: 1;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
 }
 
 nav {
-    padding: 10px;
-    background-color: #021212;
+  padding: 10px;
+  background-color: #021212;
 }
 
 nav > ul {
-    justify-content: space-around;
-    align-items: center;
+  justify-content: space-around;
+  align-items: center;
 }
 
 nav > ul > li > a {
-    transition: 0.3s;
+  transition: 0.3s;
 }
 
 nav > ul > li > a:link {
-    color:#757887
+  color: #757887;
 }
 
 nav > ul > li > a:visited {
-    color: #EFEBCE;
+  color: #efebce;
 }
 
 nav > ul > li > a:hover {
-    font-size: 1.4rem;
+  font-size: 1.4rem;
 }
 
 nav > ul > li > a:active {
-    color: #9a9dad;
+  color: #9a9dad;
 }
 
-
-
-  /* ------------- First article -------------- */
-main > aside > img {
-    max-width: 80%;
-    margin: 0 2rem;
-    border-radius: 10px;
+/* ------------- First article -------------- */
+main > aside > picture > img {
+  max-width: 70%;
+  border-radius: 10px;
 }
 
 .flex-container {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    margin: 4rem;
+  display: flex;
+  flex-direction: row;
+  margin: 4rem;
 }
 ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
 }
 
 a {
-    text-decoration: none;
-    font-size: 1.2rem;
+  text-decoration: none;
+  font-size: 1.2rem;
 }
 
 h1 {
-    font-size: 3rem;
-    padding-bottom: 1rem;
+  font-size: 3rem;
+  padding-bottom: 1rem;
 }
 
 h2 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 main > article {
-    padding: 5%;
-    text-align: justify;
+  padding: 2%;
+  text-align: justify;
+  max-width: 70%;
 }
 
 /* ---------- Footer ---------- */
 
 footer {
-    align-items: baseline;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  align-items: baseline;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 footer > p {
-    margin: 1rem;
+  margin: 1rem;
 }
 
 .social-media > li > a > img {
-    width: 50px;
-    transition: 0.3s;
+  width: 50px;
+  transition: 0.3s;
 }
 
 .social-media > li > a > img:hover {
-    width: 60px;
+  width: 60px;
 }
 
-.social-media:hover{
-    margin-bottom: 0;
+.social-media:hover {
+  margin-bottom: 0;
 }
 
 .bounce {
-    animation: bounce 0.5s;
-    animation-direction: alternate;
-    animation-iteration-count: 6;
-    animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+  animation: bounce 0.5s;
+  animation-direction: alternate;
+  animation-iteration-count: 6;
+  animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+}
+
+@keyframes bounce {
+  from {
+    transform: translate3d(0, 0, 0);
   }
-  
-  @keyframes bounce {
-    from {
-      transform: translate3d(0, 0, 0);
-    }
-    to {
-      transform: translate3d(0, 30px, 0);
-    }
+  to {
+    transform: translate3d(0, 30px, 0);
   }
+}
+
+/* ----------- Tablet size ----------- */
+@media screen and (max-width: 900px) {
+  main > aside > picture > img {
+    max-width: 90%;
+  }
+  .flex-container {
+    align-items: center;
+    margin: 1rem;
+  }
+  a {
+    font-size: 1rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+
+  /* ------- Taking animations out ------- */
+
+  nav > ul > li > a:hover {
+    font-size: 1rem;
+  }
+
+  .social-media > li > a > img:hover {
+    width: 50px;
+  }
+
+  .social-media:hover {
+    margin-bottom: initial;
+  }
+  .bounce {
+    animation: none;
+  }
+}
+
+/* --------- Phone  Size --------- */
+@media screen and (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  main > aside > picture > img {
+    border-radius: 50%;
+  }
+  main > article {
+    max-width: 80%;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+/* --------- Fixing Navbar ---------- */
+@media screen and (max-width: 550px) {
+  nav > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  header {
+    position: inherit;
+  }
+}

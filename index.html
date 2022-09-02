@@ -9,9 +9,7 @@
     <title>Manuel S. German</title>
   </head>
   <body>
-    <h1 class="bounce">
-      Manuel Sanchez German
-    </h1>
+    <h1 class="bounce">Manuel Sanchez German</h1>
     <header>
       <nav>
         <ul>
@@ -35,7 +33,10 @@
     </header>
     <main class="flex-container">
       <aside>
-        <img src="assets/cv-pic.JPG" alt="A picture of me" />
+        <picture>
+          <source srcset="assets/cv-pic-small.jpg" media="(max-width: 800px)" />
+          <img src="assets/cv-pic-big.jpg" alt="A picture of me" />
+        </picture>
       </aside>
       <article>
         <h2>Something about me</h2>

@@ -1,4 +1,5 @@
-.odd, .even {
+.odd,
+.even {
   border-radius: 10px;
   border: 3px solid #efebce;
   margin: 20px;
@@ -59,5 +60,24 @@ h2 {
   }
   100% {
     transform: translateX(0px);
+  }
+}
+
+/* ---------- Tablet Size -------- */
+@media screen and (max-width: 850px) {
+  .odd,
+  .even {
+    flex-direction: column;
+  }
+  figure > figcaption {
+    margin: 0 auto;
+    max-width: 80%;
+  }
+  .travel-pic {
+    max-width: 70%;
+    filter: none;
+  }
+  .travel-pic:hover {
+    transform: none;
   }
 }
