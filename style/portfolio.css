@@ -53,3 +53,28 @@
     transform: scale(1, 1) translateY(0);
   }
 }
+
+.image-caption {
+  max-width: 80%;
+}
+
+@media screen and (max-width: 768px) {
+  .bouncing-letter:hover {
+    animation: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .image-caption > h3 {
+    font-size: 1rem;
+  }
+  .description {
+    width: 80%;
+  }
+  .description > h2 {
+    font-size: 1.8rem;
+  }
+  .description > p {
+    font-size: 0.9rem;
+  }
+}
