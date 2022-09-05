@@ -14,11 +14,17 @@ textarea {
   background-color: transparent;
   border: none;
   border-bottom: 3px solid #efebce;
+  border-radius: 10px;
   padding: 10px;
   color: #868a9a;
   font-size: 1.1rem;
   margin: 0.5rem;
 }
+
+input:required{
+  border-bottom: 3px solid darkred;
+}
+
 button {
   margin: 1rem auto;
   padding: 15px 35px;
